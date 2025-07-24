@@ -10,8 +10,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   cupertino_icons: ^1.0.8
-  http: ^1.3.0 # Versión actualizada para compatibilidad
+  file_picker: ^5.2.0
+  http: ^1.3.0
+  flutter_secure_storage: ^8.0.0
+  image_picker: ^0.8.7+3         # captura de fotos con la cámara
+  location: ^5.0.3
+  google_maps_flutter: ^2.2.3    # widget de mapa interactivo (mantener por compatibilidad)
+  flutter_plugin_android_lifecycle: ^2.0.26
+  shared_preferences: ^2.2.2
+  flutter_map: ^6.0.0            # mapa actual (mantener)
+  latlong2: ^0.9.0               # coordenadas para flutter_map
+  proj4dart: ^2.1.0
+
+  # ✅ Solo Mapbox principal desde GitHub
+  mapbox_maps_flutter:
+    git:
+      url: https://github.com/mapbox/mapbox-maps-flutter.git
+      path: .
 
 
 dev_dependencies:
@@ -21,3 +38,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
